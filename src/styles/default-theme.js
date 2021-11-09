@@ -10,6 +10,7 @@ export const defaultTheme = {
     success: { main: "#42B547", dark: "#043F22", light: "#D8F8CE" },
     info: { main: "#31AFC1", dark: "#00476E", light: "#C8F9F5" },
   },
+  screen: { xs: "0px", sm: "600px", md: "900px", lg: "1200px", xl: "1536px" },
   spacing: (value) => {
     return `${value * 18}px`;
   },
