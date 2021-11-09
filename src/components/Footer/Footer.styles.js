@@ -15,7 +15,6 @@ export const StyledFooter = styled.footer`
     padding: ${theme.spacing(1)};
     background-color: ${theme.color.primary.main};
     color: ${theme.color.primary.text};
-    font-weight: 700;
   `};
 `;
 
