@@ -21,6 +21,8 @@ export const HeaderContainer = styled.header`
   }
 
   & nav {
+    width: 100%;
+    text-align: center;
     & a {
       text-transform: uppercase;
       font-weight: 700;

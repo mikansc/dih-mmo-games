@@ -15,7 +15,7 @@ export const Header = () => {
           <img src={LightLogo} alt="MMO Games Free to Play - By Mika Nascimento" />
         </Link>
         <nav>
-          <Button as={Link} variant="link" to="/news">
+          <Button as={Link} variant="link" to="/">
             Notícias
           </Button>
           <Button as={Link} variant="link" to="/games">
