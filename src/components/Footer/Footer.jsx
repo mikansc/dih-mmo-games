@@ -1,13 +1,12 @@
-import React from "react";
-import { StyledFooter } from "./Styled.footer";
+import { FooterLink, StyledFooter } from "./Footer.styles";
 
 export const Footer = () => {
   return (
     <StyledFooter>
       Site desenvolvido com 🧠 por{" "}
-      <a href="http://github.com/mikansc" target="_blank" rel="noreferrer">
+      <FooterLink variant="link" href="http://github.com/mikansc" target="_blank" rel="noreferrer">
         Michael Nascimento
-      </a>
+      </FooterLink>
       .
     </StyledFooter>
   );
