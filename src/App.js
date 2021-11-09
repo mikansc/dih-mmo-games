@@ -1,5 +1,5 @@
-import React from "react";
+import { MainRoutes } from "./routes/MainRoutes";
 
 export const App = () => {
-  return <div>Hello, world</div>;
+  return <MainRoutes />;
 };
