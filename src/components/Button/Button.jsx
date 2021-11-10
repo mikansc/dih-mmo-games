@@ -32,7 +32,7 @@ const LinkContainer = styled.a`
     right: 50%;
     left: 50%;
     height: 1px;
-    background-color: #fff;
+    background-color: currentColor;
     transition: all 100ms ease-in-out;
   }
 
