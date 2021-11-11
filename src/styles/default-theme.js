@@ -10,7 +10,7 @@ export const defaultTheme = {
     warning: { main: "#EDAF3B", dark: "#E28B00", light: "#FDF1CA" },
     success: { main: "#42B547", dark: "#043F22", light: "#D8F8CE" },
     info: { main: "#31AFC1", dark: "#00476E", light: "#C8F9F5" },
-    gray: { main: 'rgba(0,0,0,0.2)', light: 'rgba(0,0,0,0.02)'}
+    gray: { main: 'rgba(0,0,0,0.05)', dark: 'rgba(0,0,0,0.1)', light: 'rgba(0,0,0,0.02)'}
   },
   shadown: "0px 1px 5px rgba(0, 0, 0, 0.25)",
   screen: { xs: "0px", sm: "600px", md: "900px", lg: "1200px", xl: "1536px" },
