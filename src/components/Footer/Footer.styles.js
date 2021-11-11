@@ -1,15 +1,16 @@
 import styled, { css } from "styled-components";
 
-import { Button } from "../Button/Button";
+import { Button } from "../Button";
 
 export const StyledFooter = styled.footer`
   font-size: 0.75rem;
   font-weight: 300;
   text-align: center;
 
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
+  left: 0;
 
   ${({ theme }) => css`
     padding: ${theme.spacing(1)};
