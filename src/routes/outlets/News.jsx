@@ -4,7 +4,6 @@ import DefaultTemplate from "../../templates/DefaultTemplate";
 const News = () => {
   return (
     <DefaultTemplate>
-      <h2>News</h2>
       <Outlet />
     </DefaultTemplate>
   );
