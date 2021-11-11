@@ -13,7 +13,7 @@ export const NewsList = () => {
   const [feat, ...allNews] = data;
 
   return (
-    <Container style={{ backgroundColor: "#FFF" }}>
+    <Container paper>
       <FeaturedNews
         image={feat.main_image}
         title={feat.title}
