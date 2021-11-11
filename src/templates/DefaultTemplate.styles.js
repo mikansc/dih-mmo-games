@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const StyledContent = styled.div`
+export const StyledContent = styled.main`
   width: 100%;
-  height: 100%;
-
   ${({ theme }) => css`
-    background-color: ${theme.color.background};
+    padding-top: ${theme.size.headerBar};
+    padding-bottom: ${theme.spacing(3)};
     color: ${theme.color.defaultText};
   `}
 `;
