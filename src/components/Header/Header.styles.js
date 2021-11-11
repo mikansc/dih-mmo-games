@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: 100%;
-  height: 80px;
+  height: ${({ theme }) => theme.size.headerBar};
 
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
