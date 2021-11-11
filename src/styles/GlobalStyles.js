@@ -26,6 +26,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-weight: 300;
     position: relative;
+    background-color: ${({ theme })=> theme.color.backgroundColor};
+    background: ${({ theme })=> theme.color.backgroundGradient};
   }
 
   h1,
@@ -38,5 +40,15 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     line-height: 1.75rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
   }
 `;
