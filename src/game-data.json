@@ -1,0 +1,40 @@
+{
+  "id":452,
+  "title":"Call Of Duty: Warzone",
+  "thumbnail":"https:\/\/www.mmobomb.com\/g\/452\/thumbnail.jpg",
+  "status":"Live",
+  "short_description":"One of the most popular FPSes in the world is now a free-to-play battle royale: Call of Duty: Warzone. Strive to become the last squad standing in Battle Royale mode, where 150 players loot and shoot their way through an ever-shrinking battlefield; or complete contracts and try to escape with the most cash in Plunder mode.",
+  "description":"<p style=\"text-align: justify;\">One of the most popular FPSes in the world is now a free-to-play battle royale: Call of Duty: Warzone. Strive to become the last squad standing in Battle Royale mode, where 150 players loot and shoot their way through an ever-shrinking battlefield; or complete contracts and try to escape with the most cash in Plunder mode. Money can also buy you weapons and perks from stations throughout the map, but if you're taken out, you'll lose everything you've accumulated!<\/p>\r\n<p style=\"text-align: justify;\">Another innovation in CoD: Warzone is the gulag. If you're gunned down during a Battle Royale match, you'll be sent to the gulag with a chance to win a 1v1 for the right to return to the battlefield. Also, progression is shared between Warzone and Call of Duty: Modern Warfare. If you don't own CoD:MW, you'll keep your progression from Warzone if you buy it later.<\/p>\r\n",
+  "game_url":"https:\/\/www.mmobomb.com\/open\/call-of-duty-warzone",
+  "genre":"Shooter",
+  "platform":"Windows",
+  "publisher":"Activision",
+  "developer":"Infinity Ward",
+  "release_date":"2020-03-10",
+  "profile_url":"https:\/\/www.mmobomb.com\/call-of-duty-warzone",
+  "minimum_system_requirements":{
+  "os":"Windows 7 64-Bit (SP1) or Windows 10 64-Bit",
+    "processor":"Intel Core i3-4340 or AMD FX-6300",
+    "memory":"8GB RAM",
+    "graphics":"NVIDIA GeForce GTX 670 \/ GeForce GTX 1650 or Radeon HD 7950",
+    "storage":"175GB HD space"
+},
+  "screenshots":[
+  {
+    "id":1124,
+    "image":"https:\/\/www.mmobomb.com\/g\/452\/Call-of-Duty-Warzone-1.jpg"
+  },
+  {
+    "id":1125,
+    "image":"https:\/\/www.mmobomb.com\/g\/452\/Call-of-Duty-Warzone-2.jpg"
+  },
+  {
+    "id":1126,
+    "image":"https:\/\/www.mmobomb.com\/g\/452\/Call-of-Duty-Warzone-3.jpg"
+  },
+  {
+    "id":1127,
+    "image":"https:\/\/www.mmobomb.com\/g\/452\/Call-of-Duty-Warzone-4.jpg"
+  }
+]
+}
