@@ -32,7 +32,7 @@ export const GameList = () => {
         <h3>All games ({data.length})</h3>
         <StyledGameCardsGrid>
           {data.map((game)=> (
-            <Card item={game} onClick={()=> navigate(`/${game.id}`)} />
+            <Card item={game} onClick={()=> navigate(String(game.id))} />
           ))}
         </StyledGameCardsGrid>
       </section>
