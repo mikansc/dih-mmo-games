@@ -1,6 +1,6 @@
 import React from "react";
 import { limitText } from "../../utils/string-utils";
-import { GameCardArticle, GameCardMedia } from "./Card.styles";
+import { GameCardArticle, GameCardMedia, GameCardContent } from "./Card.styles";
 
 export const Card = ({ item, onClick }) => {
   return (
@@ -11,7 +11,7 @@ export const Card = ({ item, onClick }) => {
           <h4>{item.title}</h4>
         </div>
       </GameCardMedia>
-      <span>{limitText(item.short_description)}</span>
+      <GameCardContent>{limitText(item.short_description)}</GameCardContent>
     </GameCardArticle>
   );
 };

@@ -42,6 +42,7 @@ export const GameCardMedia = styled.div`
     & > h4 {
       font-size: 1.25rem;
       text-transform: uppercase;
+      text-align: center;
       color: ${({ theme }) => theme.color.primary.text};
       transform: translateY(100%);
       transition: transform 200ms ease-in-out;
@@ -62,3 +63,7 @@ export const GameCardMedia = styled.div`
     height: auto;
   }
 `;
+
+export const GameCardContent = styled.span`
+  
+`
