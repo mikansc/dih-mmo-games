@@ -1,4 +1,4 @@
-import { parseTitle } from "../../utils/string-utils";
+import { parseQuoteCodes } from "../../utils/string-utils";
 
 import { Button } from "../Button";
 import { Hero, HeroContent, HeroHeading, HeroImg, HeroSub } from "./FeaturedNews.styles";
@@ -12,9 +12,9 @@ export const FeaturedNews = ({ image, url, title, description }) => {
       <HeroContent>
         <div>
           <HeroHeading>
-            <span>{parseTitle(title)}</span>
+            <span>{parseQuoteCodes(title)}</span>
           </HeroHeading>
-          <HeroSub>{parseTitle(description)}</HeroSub>
+          <HeroSub>{parseQuoteCodes(description)}</HeroSub>
         </div>
         <div style={{ color: "black" }}>
           <Button href={url} target="_blank" rel="noreferrer" style={{ fontSize: "1.5rem" }}>
