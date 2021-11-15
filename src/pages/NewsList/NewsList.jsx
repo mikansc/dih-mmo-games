@@ -8,6 +8,7 @@ import { NewsCard } from "../../components/NewsCard";
 import { TextInput } from "../../components/TextInput";
 import { FeaturedNews } from "../../components/FeaturedNews";
 import { ErrorBoundary } from "../../components/ErrorBoundary";
+import { IoSearchOutline } from "react-icons/io5";
 
 export const NewsList = () => {
   const [feat, ...allNews] = data;
@@ -31,7 +32,7 @@ export const NewsList = () => {
         <NewsSidebar>
           <span>Search news: </span>
           <ErrorBoundary>
-            <TextInput name="search" label="Search" placeholder="Digite o título da notícia"/>
+            <TextInput name="search" label="Search" placeholder="Digite o título da notícia" Icon={IoSearchOutline}/>
           </ErrorBoundary>
         </NewsSidebar>
       </div>
