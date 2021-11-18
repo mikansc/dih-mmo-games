@@ -1,6 +1,11 @@
 import styled, { css } from "styled-components";
+import { Loading } from "../Loading";
 
-const Container = ({ children, fullWidth, paper, ...rest }) => {
+export const Container = ({ children, loading, fullWidth, paper, ...rest }) => {
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <StyledContainer fullWidth={fullWidth} {...rest} paper={paper}>
       {children}
@@ -18,5 +23,3 @@ const StyledContainer = styled.div`
     color: ${paper ? theme.color.primary.dark : "inherit"};
   `}
 `;
-
-export default Container;

@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../Layout/Container";
+import { Container } from "../Layout/Container";
 
 import { HeaderContainer } from "./Header.styles";
 
 import LightLogo from "../../assets/img/logo-light.svg";
 import { Link } from "react-router-dom";
-import { Button } from "../Button/Button";
+import { Button } from "../Button";
 
 export const Header = () => {
   return (

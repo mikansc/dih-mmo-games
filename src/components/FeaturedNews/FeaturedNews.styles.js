@@ -1,21 +1,8 @@
 import styled, { css } from "styled-components";
 
-
 export const Hero = styled.section`
   display: flex;
   gap: ${({ theme }) => theme.spacing(2)};
-`;
-
-export const HeroImg = styled.div`
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-
-  & img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 export const HeroContent = styled.div`
@@ -48,7 +35,6 @@ export const HeroHeading = styled.h2`
       padding: ${theme.spacing(0.25)};
       transition: background-color 150ms linear;
     `}
-
     &:hover {
       ${({ theme }) => css`
         background-color: ${theme.color.primary.main};

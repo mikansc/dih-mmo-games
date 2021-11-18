@@ -19,17 +19,14 @@ export const NewsArticle = styled.article`
 `;
 
 export const NewsArticleMedia = styled.div`
+  width: 100%;
   max-width: 210px;
+  min-height: 140px;
   overflow: hidden;
 
   ${({ theme }) => css`
     margin-right: ${theme.spacing(1)};
   `}
-  & img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
 `;
 
 export const NewsArticleContent = styled.section`

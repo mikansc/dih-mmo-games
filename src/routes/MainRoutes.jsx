@@ -4,8 +4,8 @@ import Games from "./outlets/Games";
 import News from "./outlets/News";
 
 import { NewsList } from "../pages/NewsList";
-import { GameList } from "../pages/GameList/GameList";
-import { GameDetails } from "../pages/GameDetails/GameDetails";
+import { GameList } from "../pages/GameList";
+import { GameDetails } from "../pages/GameDetails";
 
 export const MainRoutes = () => {
   return (

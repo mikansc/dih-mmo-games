@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const GameCardArticle = styled.article`
   margin: 1rem 0;
-  max-width: 350px;
-  height: 340px;
+  width: 100%;
+  min-height: 340px;
   overflow: hidden;
   padding: 0.5rem;
   border-radius: 5px;
@@ -19,9 +19,12 @@ export const GameCardArticle = styled.article`
 
 export const GameCardMedia = styled.div`
   width: 100%;
+  min-height: 190px;
   margin-bottom: 0.75rem;
   overflow: hidden;
   position: relative;
+  background-color: ${({ theme }) => theme.color.primary.dark};
+
 
   & > div {
     position: absolute;
@@ -57,11 +60,11 @@ export const GameCardMedia = styled.div`
     }
   }
 
-  & img {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
+  //& img {
+  //  width: 100%;
+  //  display: block;
+  //  height: auto;
+  //}
 `;
 
 export const GameCardContent = styled.span`

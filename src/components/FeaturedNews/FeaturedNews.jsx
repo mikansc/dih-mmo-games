@@ -1,14 +1,13 @@
 import { parseQuoteCodes } from "../../utils/string-utils";
 
 import { Button } from "../Button";
-import { Hero, HeroContent, HeroHeading, HeroImg, HeroSub } from "./FeaturedNews.styles";
+import { Hero, HeroContent, HeroHeading, HeroSub } from "./FeaturedNews.styles";
+import { Image } from "../Image/Image";
 
 export const FeaturedNews = ({ image, url, title, description }) => {
   return (
     <Hero>
-      <HeroImg>
-        <img src={image} alt={title} />
-      </HeroImg>
+      <Image src={image} alt={title} />
       <HeroContent>
         <div>
           <HeroHeading>

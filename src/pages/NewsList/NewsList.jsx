@@ -1,38 +1,43 @@
 import styled, { css } from "styled-components";
 
-import data from "../../news-data.json";
-
-import Container from "../../components/Layout/Container";
+import { Container } from "../../components/Layout/Container";
 import { Divider } from "../../components/Layout/Divider";
 import { NewsCard } from "../../components/NewsCard";
 import { TextInput } from "../../components/TextInput";
 import { FeaturedNews } from "../../components/FeaturedNews";
 import { ErrorBoundary } from "../../components/ErrorBoundary";
 import { IoSearchOutline } from "react-icons/io5";
+import { useFetchNews } from "../../hooks/useFetchNews";
+import { usePaginate } from "../../hooks/usePaginate";
 
 export const NewsList = () => {
-  const [feat, ...allNews] = data;
+  const { news, loading } = useFetchNews();
+  const { data } = usePaginate(news);
+
+  const [feat] = news;
 
   return (
-    <Container paper>
-      <FeaturedNews
-        image={feat.main_image}
-        title={feat.title}
-        description={feat.short_description}
-        url={feat.article_url}
-      />
+    <Container paper loading={loading}>
+      {feat && (
+        <FeaturedNews
+          image={feat.main_image}
+          title={feat.title}
+          description={feat.short_description}
+          url={feat.article_url}
+        />
+      )}
       <Divider />
       <div style={{ display: "flex" }}>
         <NewsListSection>
           <h3>All news ({data.length})</h3>
-          {allNews.map(item => (
+          {data.map(item => (
             <NewsCard key={item.id} item={item} />
           ))}
         </NewsListSection>
         <NewsSidebar>
           <span>Search news: </span>
           <ErrorBoundary>
-            <TextInput name="search" label="Search" placeholder="Digite o título da notícia" Icon={IoSearchOutline}/>
+            <TextInput name="search" label="Search" placeholder="Digite o título da notícia" Icon={IoSearchOutline} />
           </ErrorBoundary>
         </NewsSidebar>
       </div>
@@ -58,7 +63,6 @@ const NewsSidebar = styled.aside`
     padding-left: ${theme.spacing(1)};
     color: ${theme.color.primary.dark};
   `}
-  
   & > span {
     font-size: 0.85rem;
     font-weight: 700;

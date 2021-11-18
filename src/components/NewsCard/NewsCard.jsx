@@ -1,10 +1,11 @@
 import { Button } from "../Button";
 import { NewsArticle, NewsArticleContent, NewsArticleMedia } from "./NewsCard.styles";
+import { Image } from "../Image/Image";
 
 export const NewsCard = (props) => {
   return <NewsArticle>
     <NewsArticleMedia>
-      <img src={props.item.thumbnail} alt={props.item.title} />
+      <Image src={props.item.thumbnail} alt={props.item.title} />
     </NewsArticleMedia>
     <NewsArticleContent>
       <div>
