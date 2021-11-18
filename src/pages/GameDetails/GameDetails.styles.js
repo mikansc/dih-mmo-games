@@ -14,14 +14,8 @@ export const SliderWrapper = styled.div`
 
 export const SliderMediaContainer = styled.div`
   width: 100%;
+  //height: 668px;
   overflow: hidden;
-
-  & img {
-    width: 100%;
-    height: 668px;
-    object-fit: cover;
-    display: block;
-  }
 `;
 
 export const SlideMediaThumbs = styled.div`
@@ -37,14 +31,9 @@ export const SlideMediaThumbs = styled.div`
 
 export const ThumbCard = styled.div`
   width: 100%;
+  min-height: 120px;
   overflow: hidden;
   margin: 0.5em 0;
   border: 1px solid #FFF;
   cursor: pointer;
-
-  & img {
-    display: block;
-    max-width: 100%;
-    filter: ${({ isSelected }) => isSelected ? "none" : "grayscale(100%)"};
-  }
 `;
