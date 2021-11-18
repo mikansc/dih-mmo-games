@@ -46,5 +46,6 @@ const StyledImg = styled.img`
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
 `;
