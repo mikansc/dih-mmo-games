@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
 export const Grid = (props) => {
-  const { children, container, item, xs, sm, md, lg, xl } = props;
-  return <StyledGrid container={container} item={item} xs={xs} sm={sm} md={md} lg={lg} xl={xl}>{children}</StyledGrid>;
+  const { children, container, item, ...rest } = props;
+  return <StyledGrid container={container} item={item} {...rest}>{children}</StyledGrid>;
 };
 
 const StyledGrid = styled.div`
