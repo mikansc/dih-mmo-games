@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HttpGamesService } from "../api/endpoints/games";
+import { HttpGamesService } from "../services/endpoints/games";
 
 export const useFetchGames = () => {
   const [loading, setLoading] = useState(true);

@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Games from "./outlets/Games";
-import News from "./outlets/News";
+import News from "./route-contexts/News";
+import Games from "./route-contexts/Games";
 
 import { NewsList } from "../pages/NewsList";
 import { GameList } from "../pages/GameList";

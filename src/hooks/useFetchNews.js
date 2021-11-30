@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HttpNewsService } from "../api/endpoints/news";
+import { HttpNewsService } from "../services/endpoints/news";
 
 export const useFetchNews = () => {
   const [news, setNews] = useState([]);

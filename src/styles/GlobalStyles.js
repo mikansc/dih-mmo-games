@@ -36,7 +36,9 @@ export const GlobalStyles = createGlobalStyle`
   h4,
   h5,
   h6,
-  p {
+  p,
+  ul,
+  li {
     margin: 0;
     padding: 0;
     line-height: 1.75rem;

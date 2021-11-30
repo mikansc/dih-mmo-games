@@ -10,7 +10,7 @@ export const useSearchFilter = (data) => {
   }, [data]);
 
   useEffect(() => {
-    const filteredList = data.filter(news => new RegExp(term, "ig").test(news.title));
+    const filteredList = data.filter(entry => new RegExp(term, "ig").test(entry.title));
     setFiltered(filteredList);
   }, [data, term]);
 

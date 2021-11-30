@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { HttpGameService } from "../api/endpoints/game";
 import { useParams } from "react-router-dom";
+import { HttpGameService } from "../services/endpoints/game";
 
 export const useFetchGame = () => {
   const { gameId } = useParams()

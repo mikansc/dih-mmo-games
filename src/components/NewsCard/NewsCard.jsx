@@ -1,8 +1,12 @@
 import { Button } from "../Button";
 import { NewsArticle, NewsArticleContent, NewsArticleMedia } from "./NewsCard.styles";
 import { Image } from "../Image/Image";
+import { useNewsContext } from "../../contexts/news-context";
 
 export const NewsCard = (props) => {
+
+  const { handleOpenNews } = useNewsContext();
+
   return <NewsArticle>
     <NewsArticleMedia>
       <Image src={props.item.thumbnail} alt={props.item.title} />
@@ -13,7 +17,7 @@ export const NewsCard = (props) => {
         <p>{props.item.short_description}</p>
       </div>
       <div style={{ color: "black" }}>
-        <Button href={props.item.url} target="_blank" rel="noreferrer" style={{ fontSize: "1rem" }}>
+        <Button variant="button" onClick={()=> handleOpenNews(props.item)} style={{ fontSize: "1rem" }}>
           Read more...
         </Button>
       </div>

@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { StyledContent } from "./DefaultTemplate.styles";
@@ -12,4 +13,4 @@ const DefaultTemplate = ({ children }) => {
   );
 };
 
-export default DefaultTemplate;
+export default React.memo(DefaultTemplate);
